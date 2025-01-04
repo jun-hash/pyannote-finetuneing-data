@@ -10,9 +10,12 @@ Protocols:
         train:
             uri: lists/train.list.txt
             annotation: rttm/{uri}.rttm
+            annotated: rttm/{uri}.rttm
         development:
             uri: lists/dev.list.txt
             annotation: rttm/{uri}.rttm
+            annotated: rttm/{uri}.rttm
         test:
             uri: lists/test.list.txt
             annotation: rttm/{uri}.rttm
+            annotated: rttm/{uri}.rttm
