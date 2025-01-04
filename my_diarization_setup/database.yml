@@ -1,49 +1,18 @@
 Databases:
-  MyDatabase:
-    audio: audio_data/{uri}.wav
+  MyCustomDB:
+    - audio_data/{uri}.wav
 
 Protocols:
-  MyDatabase:
+  MyCustomDB:
     SpeakerDiarization:
-      mini:
-      Protocols:
-  MyDatabase:
-    SpeakerDiarization:
-      mini:
+      MyProtocol:
         scope: file
         train:
-          uri: /path/to/lists/train.lst
-          annotation: /path/to/rttms/{uri}.rttm
-          annotated: /path/to/uems/{uri}.uem
-
-        train:
-          uri: lists/train.list.txt
-          annotation: rttm/{uri}.rttm
+            uri: lists/train.lst
+            annotation: rttm/{uri}.rttm
         development:
-          uri: lists/dev.list.txt
-          annotation: rttm/{uri}.rttm
+            uri: lists/dev.lst
+            annotation: rttm/{uri}.rttm
         test:
-          uri: lists/test.list.txt
-          annotation: rttm/{uri}.rttm
-
-      full:
-      Protocols:
-  MyDatabase:
-    SpeakerDiarization:
-      mini:
-        scope: file
-        train:
-          uri: /path/to/lists/train.lst
-          annotation: /path/to/rttms/{uri}.rttm
-          annotated: /path/to/uems/{uri}.uem
-
-        train:
-          uri: lists/train.full.txt
-          annotation: rttm/{uri}.rttm
-        development:
-          uri: lists/dev.full.txt
-          annotation: rttm/{uri}.rttm
-        test:
-          uri: lists/test.full.txt
-          annotation: rttm/{uri}.rttm
-
+            uri: lists/test.lst
+            annotation: rttm/{uri}.rttm
