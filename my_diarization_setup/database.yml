@@ -6,6 +6,16 @@ Protocols:
   MyDatabase:
     SpeakerDiarization:
       mini:
+      Protocols:
+  MyDatabase:
+    SpeakerDiarization:
+      mini:
+        scope: file
+        train:
+          uri: /path/to/lists/train.lst
+          annotation: /path/to/rttms/{uri}.rttm
+          annotated: /path/to/uems/{uri}.uem
+
         train:
           uri: lists/train.list.txt
           annotation: rttm/{uri}.rttm
@@ -17,6 +27,16 @@ Protocols:
           annotation: rttm/{uri}.rttm
 
       full:
+      Protocols:
+  MyDatabase:
+    SpeakerDiarization:
+      mini:
+        scope: file
+        train:
+          uri: /path/to/lists/train.lst
+          annotation: /path/to/rttms/{uri}.rttm
+          annotated: /path/to/uems/{uri}.uem
+
         train:
           uri: lists/train.full.txt
           annotation: rttm/{uri}.rttm
