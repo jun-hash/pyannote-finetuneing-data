@@ -1,0 +1,29 @@
+Databases:
+  MyDatabase:
+    audio: audio_data/{uri}.wav
+
+Protocols:
+  MyDatabase:
+    SpeakerDiarization:
+      mini:
+        train:
+          uri: lists/train.list.txt
+          annotation: rttm/{uri}.rttm
+        development:
+          uri: lists/dev.list.txt
+          annotation: rttm/{uri}.rttm
+        test:
+          uri: lists/test.list.txt
+          annotation: rttm/{uri}.rttm
+
+      full:
+        train:
+          uri: lists/train.full.txt
+          annotation: rttm/{uri}.rttm
+        development:
+          uri: lists/dev.full.txt
+          annotation: rttm/{uri}.rttm
+        test:
+          uri: lists/test.full.txt
+          annotation: rttm/{uri}.rttm
+
