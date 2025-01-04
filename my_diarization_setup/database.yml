@@ -8,7 +8,7 @@ Protocols:
       MyProtocol:
         scope: file
         train:
-            uri: ONRC_EP3_1
+            uri: lists/train.list.txt
             annotation: rttm/{uri}.rttm
             annotated: uem/{uri}.uem
         development:
