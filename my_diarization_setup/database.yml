@@ -8,11 +8,11 @@ Protocols:
       MyProtocol:
         scope: file
         train:
-            uri: lists/train.lst
+            uri: lists/train.list
             annotation: rttm/{uri}.rttm
         development:
-            uri: lists/dev.lst
+            uri: lists/dev.list
             annotation: rttm/{uri}.rttm
         test:
-            uri: lists/test.lst
+            uri: lists/test.list
             annotation: rttm/{uri}.rttm
