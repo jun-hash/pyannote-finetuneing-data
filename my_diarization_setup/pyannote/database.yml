@@ -5,7 +5,7 @@ Databases:
 Protocols:
   MyDatabase:
     SpeakerDiarization:
-      mini:     # 테스트용 
+      mini:
         train:
           uri: ../lists/train.list.txt
           annotation: ../audio_data/{uri}.rttm
