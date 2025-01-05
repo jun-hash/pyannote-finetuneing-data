@@ -32,7 +32,11 @@ if __name__ == "__main__":
     current_dir = os.path.dirname(os.path.abspath(__file__))
     rttm_folder = os.path.join(current_dir, "rttm")
     
-    # RTTM 폴더가 존재하는지 확인
+    # 현재 UEM 파일들은 rttm 폴더 아래에 생성되고 있습니다.
+    # UEM 파일들을 uem 폴더 아래에 생성하도록 경로를 수정합니다.
+    uem_folder = os.path.join(current_dir, "uem")
+    if not os.path.exists(uem_folder):
+        os.makedirs(uem_folder)
     if not os.path.exists(rttm_folder):
         print(f"Error: RTTM 폴더를 찾을 수 없습니다: {rttm_folder}")
     else:
